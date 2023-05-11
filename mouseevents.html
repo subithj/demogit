@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MouseEvents</title>
+    </head>
+    <body>
+        <h1 id="hid">Hello This is my addEventListener</h1>
+        <h2 id="a">This is my mouse Event</h2>
+        <img src = "dog1.jpg" id = "picture" alt = "Heading Image">
+        <script>
+            function start(){
+	            document.getElementById("picture").addEventListener("mouseover", over, false );
+	            document.getElementById("picture").addEventListener("mouseout", out, false );
+            document.getElementById("hid").addEventListener("mousemove",move,false);
+            document.getElementById("hid").addEventListener("mouseout",out,false);
+              document.getElementById("a").addEventListener("mouseover",ov);
+              document.getElementById("a").addEventListener("mouseout",ou);
+	}
+            
+            function move(){
+                document.getElementById("hid").style.color="purple";
+            }
+            function out(){
+                document.getElementById("hid").style.color="yellow";
+            }
+            function ov(){
+                document.getElementById("a").style.color="red";
+
+            }
+            function ou(){
+                document.getElementById("a").style.color="black";
+            }
+
+            window.addEventListener( "load", start, false );
+	
+	
+
+	function over(e)
+	{
+	 document.getElementById("picture").setAttribute( "src", "dog2.jpg");
+	}
+
+	function out(e)
+	{
+	e.target.setAttribute( "src", "dog2.jpg");
+	}
+            </script>
+    </body>
+</html>
+
+<!DOCTYPE html>
+ <html>
+ <head>
+ <title>Mouse_Event_Listener</title>
+<script type = "text/javascript">
+	
+	
+</script> 
+</head>
+<body>
+
+	
+
+</body>
+ </html>
